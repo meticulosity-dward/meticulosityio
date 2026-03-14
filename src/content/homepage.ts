@@ -1,8 +1,9 @@
 /* ─── Navigation ─── */
 export const nav = {
   links: [
+    { label: "What is .io", href: "/what-is-meticulosity-io" },
+    { label: "Automation Catalog", href: "/automation-catalog" },
     { label: "How It Works", href: "#how-it-works" },
-    { label: "Automations", href: "#automations" },
     { label: "Data Layer", href: "#data-layer" },
     { label: "Pricing", href: "#pricing" },
     { label: "About", href: "#about" },
@@ -445,9 +446,9 @@ export const footer = {
     product: {
       title: "Product",
       links: [
+        { label: "What is .io", href: "/what-is-meticulosity-io" },
+        { label: "Automation Catalog", href: "/automation-catalog" },
         { label: "How It Works", href: "#how-it-works" },
-        { label: "Automations", href: "#automations" },
-        { label: "Data Layer", href: "#data-layer" },
         { label: "Pricing", href: "#pricing" },
       ],
     },
