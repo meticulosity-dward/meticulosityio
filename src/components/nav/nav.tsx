@@ -46,12 +46,19 @@ export default function Nav() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-0">
-              <span className="font-heading text-2xl font-bold text-white">
-                meticulosity
-              </span>
-              <span className="font-heading text-2xl font-light text-[#5ABA48]">
-                .io
+            <a href="#" className="flex items-center gap-2">
+              <img
+                src="/io-logo.svg"
+                alt=""
+                className="h-8 w-auto"
+              />
+              <span className="flex items-center gap-0">
+                <span className="font-heading text-2xl font-bold text-white">
+                  meticulosity
+                </span>
+                <span className="font-heading text-2xl font-light text-[#5ABA48]">
+                  .io
+                </span>
               </span>
             </a>
 

@@ -10,12 +10,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Column 1: Brand */}
           <div>
-            <div className="flex items-center gap-0 mb-3">
-              <span className="font-heading text-xl font-bold text-white">
-                meticulosity
-              </span>
-              <span className="font-heading text-xl font-light text-[#5ABA48]">
-                .io
+            <div className="flex items-center gap-2 mb-3">
+              <img
+                src="/io-logo.svg"
+                alt=""
+                className="h-[26px] w-auto"
+              />
+              <span className="flex items-center gap-0">
+                <span className="font-heading text-xl font-bold text-white">
+                  meticulosity
+                </span>
+                <span className="font-heading text-xl font-light text-[#5ABA48]">
+                  .io
+                </span>
               </span>
             </div>
             <p className="text-sm text-white/40">{footer.tagline}</p>
