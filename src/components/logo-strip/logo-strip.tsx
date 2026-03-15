@@ -108,12 +108,15 @@ function ClickUpIcon() {
   );
 }
 
-/* Monday.com: two vertical capsule/pill shapes side by side */
+/* Monday.com: from vectorlogo.zone - three shapes (two angled pills + circle) */
 function MondayIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M4.8 2a2.8 2.8 0 0 0-2.4 4.2l6 10.4a2.8 2.8 0 0 0 4.8 0l6-10.4A2.8 2.8 0 0 0 16.8 2a2.8 2.8 0 0 0-2.4 1.4L12 7.6 9.6 3.4A2.8 2.8 0 0 0 7.2 2z" opacity="0.7" />
-      <circle cx="19.2" cy="19.2" r="2.8" />
+    <svg viewBox="0 0 64 64" width="24" height="24" fill="currentColor">
+      <g transform="matrix(3.208255 0 0 3.208255 -35.559129 -63.587202)">
+        <path d="M13.513 35.76a2.433 2.433 0 0 1-2.059-3.723l4.377-6.99a2.432 2.432 0 1 1 4.123 2.582l-4.378 6.99a2.43 2.43 0 0 1-2.063 1.141z"/>
+        <path d="M21.056 35.76a2.433 2.433 0 0 1-2.063-3.723l4.38-6.99a2.432 2.432 0 1 1 4.117 2.582l-4.372 6.99a2.43 2.43 0 0 1-2.063 1.141z"/>
+        <ellipse ry="2.375" rx="2.436" cy="33.384" cx="28.597"/>
+      </g>
     </svg>
   );
 }
@@ -184,15 +187,12 @@ function SlackIcon() {
   );
 }
 
-/* Microsoft Teams: T icon with person silhouette */
+/* Microsoft Teams: from Bootstrap Icons */
 function TeamsIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M20.625 5.625a2.063 2.063 0 1 0 0-4.125 2.063 2.063 0 0 0 0 4.125z" opacity="0.5" />
-      <path d="M23.25 8.25h-4.875a.37.37 0 0 0-.375.375v5.625c0 1.864-1.011 3.489-2.513 4.364A4.5 4.5 0 0 1 11.25 22.5h3.375c.207 0 .375-.168.375-.375V8.625a.37.37 0 0 1 .375-.375h7.875A.75.75 0 0 0 24 7.5a.75.75 0 0 0-.75-.75z" opacity="0.5" />
-      <path d="M16.5 5.25a2.625 2.625 0 1 0 0-5.25 2.625 2.625 0 0 0 0 5.25z" opacity="0.7" />
-      <path d="M16.5 6.75H8.25a.75.75 0 0 0-.75.75.75.75 0 0 0 .75.75H11.25v10.125c0 .207.168.375.375.375h.75a.37.37 0 0 0 .375-.375V8.25h3.75a.75.75 0 0 0 .75-.75.75.75 0 0 0-.75-.75z" />
-      <path d="M11.25 18.75a4.5 4.5 0 0 1-4.5 4.5A4.5 4.5 0 0 1 2.25 18.75V9.375A.37.37 0 0 1 2.625 9H9.75a.37.37 0 0 1 .375.375v.375H5.25v2.25h3.75v.75H5.25v2.25h3.75v.75H5.25v2.25h4.875v.375c0 .207.168.375.375.375h.75z" opacity="0.7" />
+    <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
+      <path d="M9.186 4.797a2.42 2.42 0 1 0-2.86-2.448h1.178c.929 0 1.682.753 1.682 1.682zm-4.295 7.738h2.613c.929 0 1.682-.753 1.682-1.682V5.58h2.783a.7.7 0 0 1 .682.716v4.294a4.197 4.197 0 0 1-4.093 4.293c-1.618-.04-3-.99-3.667-2.35Zm10.737-9.372a1.674 1.674 0 1 1-3.349 0 1.674 1.674 0 0 1 3.349 0m-2.238 9.488-.12-.002a5.2 5.2 0 0 0 .381-2.07V6.306a1.7 1.7 0 0 0-.15-.725h1.792c.39 0 .707.317.707.707v3.765a2.6 2.6 0 0 1-2.598 2.598z"/>
+      <path d="M.682 3.349h6.822c.377 0 .682.305.682.682v6.822a.68.68 0 0 1-.682.682H.682A.68.68 0 0 1 0 10.853V4.03c0-.377.305-.682.682-.682Zm5.206 2.596v-.72h-3.59v.72h1.357V9.66h.87V5.945z"/>
     </svg>
   );
 }
@@ -228,33 +228,35 @@ function AirtableIcon() {
   );
 }
 
-/* Fireflies.ai: stylized flame/firefly shape */
+/* Fireflies.ai: from official site - four-block pinwheel grid */
 function FirefliesIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M12 2C8.5 2 5.5 4.2 4.3 7.3c-.3.7-.5 1.4-.5 2.2 0 .5.1 1 .2 1.5.5 1.8 1.7 3.3 3.3 4.2l4.7 2.8 4.7-2.8c1.6-.9 2.8-2.4 3.3-4.2.1-.5.2-1 .2-1.5 0-.8-.2-1.5-.5-2.2C18.5 4.2 15.5 2 12 2zm0 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" opacity="0.7" />
-      <path d="M12 18l-1.5 4h3L12 18z" opacity="0.5" />
+    <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor">
+      <path d="M10.5199 0H0V10.4427H10.5199V0Z"/>
+      <path d="M22.9812 12.6066H12.4613V23.0492H22.9812V12.6066Z"/>
+      <path d="M22.9812 0H12.4613V10.4426H31.9996V8.95045C31.9994 6.57656 31.0492 4.30001 29.3581 2.6215C27.667 0.942992 25.3735 0 22.9821 0H22.9812Z"/>
+      <path d="M0 12.6066V23.0492C0.000240298 25.4231 0.950411 27.6997 2.64151 29.3782C4.3326 31.0567 6.62612 31.9997 9.01757 31.9997H10.5199V12.6066H0Z"/>
     </svg>
   );
 }
 
-/* JustCall: phone receiver */
+/* JustCall: from official CDN - two interlocking J curves with chevron arrows */
 function JustCallIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M19.44 13c-.22 0-.45-.07-.67-.12a9.44 9.44 0 0 1-1.31-.39 2 2 0 0 0-2.48 1l-.22.46a12.18 12.18 0 0 1-2.66-2 12.18 12.18 0 0 1-2-2.66l.42-.28a2 2 0 0 0 1-2.48 10.33 10.33 0 0 1-.39-1.31c-.05-.22-.09-.45-.12-.67a3 3 0 0 0-3-2.49h-3a3 3 0 0 0-3 3.41 19 19 0 0 0 16.52 16.46h.38a3 3 0 0 0 2-.77 3 3 0 0 0 1-2.25v-3a3 3 0 0 0-2.47-2.91z" />
+    <svg viewBox="-2 12 105 105" width="24" height="24" fill="currentColor">
+      <path d="M11.0094 41.8879L1.05448 50.3838C-0.351492 51.5883-0.351492 53.7565 1.05448 54.961L11.0094 63.4087" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round"/>
+      <path d="M89.5726 76.7842L99.5275 68.2882C100.933 67.0837 100.933 64.9156 99.5275 63.711L89.5726 55.2633" stroke="currentColor" strokeWidth="4" fill="none" strokeLinecap="round"/>
+      <path d="M63.3778 28.8349C62.3273 28.8349 61.3415 29.0276 60.3234 29.14C62.2142 32.7376 63.3778 36.7527 63.3778 41.0889V72.3745C63.3778 85.7046 53.2451 96.5774 40.2358 98.0871C44.5992 106.422 53.2774 112.172 63.3778 112.172C77.8414 112.172 89.574 100.512 89.574 86.1543V54.8687C89.574 40.4947 77.8414 28.8349 63.3778 28.8349Z"/>
+      <path d="M37.2081 86.1606V54.875C37.2081 41.5449 47.3408 30.6721 60.35 29.1624C55.9867 20.8271 47.3084 15.0775 37.2081 15.0775C22.7444 15.0775 11.0118 26.7373 11.0118 41.0952V72.3808C11.0118 86.7548 22.7444 98.3985 37.2081 98.3985C38.2424 98.3985 39.2443 98.2058 40.2463 98.0934C38.3717 94.5119 37.2081 90.4969 37.2081 86.1606Z"/>
     </svg>
   );
 }
 
-/* FreshBooks: lightning bolt (the FreshBooks icon mark) */
+/* FreshBooks: from logotyp.us - F in rounded square */
 function FreshBooksIcon() {
   return (
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-      <path d="M7.5 2A2.5 2.5 0 0 0 5 4.5v15A2.5 2.5 0 0 0 7.5 22h9a2.5 2.5 0 0 0 2.5-2.5v-12L13 2H7.5z" opacity="0.15" />
-      <path d="M13 2v5.5a.5.5 0 0 0 .5.5H19" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
-      <path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H13l6 5.5v12a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 19.5z" fill="none" stroke="currentColor" strokeWidth="1.3" />
-      <path d="M8.5 12h5M8.5 15h3.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" fill="none" />
+    <svg viewBox="-1 0 31 38" width="24" height="24" fill="currentColor">
+      <path d="m14.1 2.3c-7.8 0-14.1 6.3-14.1 14.1v19.3h19.3c7.8 0 14.1-6.3 14.1-14.1v-19.3zm11.4 5.9c0 2.6-2.1 4.6-4.6 4.6h-5v4h6.7v4.6h-6.6v9.6h-5.5v-24h5.4v4.3c.2-2.4 2.2-4.3 4.6-4.3h5z" fillRule="evenodd"/>
     </svg>
   );
 }
