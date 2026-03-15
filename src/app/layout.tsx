@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lexend, DM_Sans } from "next/font/google";
+import { BookingProvider } from "@/components/ui/booking-modal";
 import "./globals.css";
 
 const lexend = Lexend({
@@ -91,7 +92,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        {children}
+        <BookingProvider>{children}</BookingProvider>
       </body>
     </html>
   );

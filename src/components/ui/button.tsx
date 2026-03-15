@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useBooking } from "@/components/ui/booking-modal";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -17,6 +18,9 @@ export default function Button({
   className = "",
   size = "md",
 }: ButtonProps) {
+  const { open } = useBooking();
+  const isBooking = href === "#contact";
+
   const sizeClasses = {
     sm: "px-5 py-2.5 text-sm",
     md: "px-7 py-3.5 text-base",
@@ -32,10 +36,26 @@ export default function Button({
       "bg-white text-[#552769] shadow-lg hover:shadow-xl hover:shadow-purple-900/20",
   };
 
+  const sharedClasses = `inline-flex items-center justify-center rounded-lg font-heading font-semibold transition-all duration-300 cursor-pointer ${sizeClasses[size]} ${variantClasses[variant]} ${className}`;
+
+  if (isBooking) {
+    return (
+      <motion.button
+        type="button"
+        className={sharedClasses}
+        onClick={open}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+      >
+        {children}
+      </motion.button>
+    );
+  }
+
   return (
     <motion.a
       href={href}
-      className={`inline-flex items-center justify-center rounded-lg font-heading font-semibold transition-all duration-300 ${sizeClasses[size]} ${variantClasses[variant]} ${className}`}
+      className={sharedClasses}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
