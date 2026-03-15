@@ -40,7 +40,7 @@ function BulletList({ children }: { children: React.ReactNode }) {
 export default function PrivacyPage() {
   return (
     <>
-      <Nav />
+      <Nav darkBg />
       <main
         id="main-content"
         className="bg-gradient-to-b from-lavender via-white to-white pt-32 pb-24"

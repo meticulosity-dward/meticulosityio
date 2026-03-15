@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { nav } from "@/content/homepage";
 import Button from "@/components/ui/button";
 
-export default function Nav() {
+export default function Nav({ darkBg = false }: { darkBg?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -35,7 +35,7 @@ export default function Nav() {
 
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled
+          scrolled || darkBg
             ? "bg-[#190F2E]/95 backdrop-blur-md shadow-lg"
             : "bg-transparent"
         }`}

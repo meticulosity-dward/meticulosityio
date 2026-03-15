@@ -40,7 +40,7 @@ function BulletList({ children }: { children: React.ReactNode }) {
 export default function TermsPage() {
   return (
     <>
-      <Nav />
+      <Nav darkBg />
       <main
         id="main-content"
         className="bg-gradient-to-b from-lavender via-white to-white pt-32 pb-24"
