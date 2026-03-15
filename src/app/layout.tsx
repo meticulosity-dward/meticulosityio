@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { BookingProvider } from "@/components/ui/booking-modal";
 import "./globals.css";
 
@@ -73,6 +75,15 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MGHGC7T3');`,
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationJsonLd),
@@ -86,6 +97,14 @@ export default function RootLayout({
         />
       </head>
       <body className={`${lexend.variable} ${dmSans.variable} antialiased`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MGHGC7T3"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:top-4 focus:left-4 focus:rounded"
@@ -93,6 +112,8 @@ export default function RootLayout({
           Skip to content
         </a>
         <BookingProvider>{children}</BookingProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
