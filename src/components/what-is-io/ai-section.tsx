@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Brain, ClipboardList, Mic, FileText, Map, Info } from "lucide-react";
+import { Brain, ClipboardList, Mic, FileText, Info } from "lucide-react";
 import { aiSection } from "@/content/what-is-meticulosity-io";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
-const exampleIcons = [ClipboardList, Mic, FileText, Map];
+const exampleIcons = [ClipboardList, Mic, FileText];
 
 export default function AiSection() {
   return (

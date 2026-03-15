@@ -5,11 +5,11 @@ export const wioHero = {
   eyebrow: "Automation-as-a-Service Built for Agencies",
   headline: "We Automate Agency Operations So Your Team Doesn't Have To",
   subheadline:
-    "Meticulosity.io is a managed automation service. We plug into the tools you already use, deploy production-tested automations that replace repetitive ops work, and run everything on an ongoing basis. Your team never builds a workflow. Your team never maintains one. That's our job.",
+    "Meticulosity.io is a managed automation service. We plug into the tools you already use, deploy automations that replace repetitive ops work, and run everything on an ongoing basis. Your team never builds or maintains a workflow. That's our job.",
   stats: [
-    { value: "50+", label: "Production Automations" },
+    { value: "50+", label: "Live Automations" },
     { value: "230+", label: "Hours Saved Per Month" },
-    { value: "60+", label: "Concurrent Clients Served" },
+    { value: "60+", label: "Clients Served" },
     { value: "8x", label: "Average ROI" },
   ],
   cta: "Book a Discovery Call",
@@ -24,7 +24,7 @@ export const threeThings = {
       number: "01",
       title: "It's Not Software",
       subtitle: "There's no platform to log into.",
-      body: "Meticulosity.io is not a tool you buy. There are no dashboards to learn, no drag-and-drop builders, no workflow templates to figure out. You don't need a technical team member or an \"automation person\" to make it work. We handle the entire technology layer. You experience the results.",
+      body: "Meticulosity.io is not a tool you buy. There are no dashboards to learn, no drag-and-drop builders, no workflow templates to figure out. You don't need a technical team member to make it work. We handle everything behind the scenes. You experience the results.",
     },
     {
       number: "02",
@@ -37,7 +37,7 @@ export const threeThings = {
       title: "It's a Managed Service",
       subtitle:
         "We deploy, run, and maintain automations across your existing tools.",
-      body: "Think of it like outsourcing your bookkeeping or IT. Except instead of accounting or helpdesk, we handle the operational busywork that's quietly eating 15 to 20 percent of your margins: onboarding, burn reports, time sync, task routing, invoicing, data hygiene, and dozens more. We monitor everything. When something changes, like a new client, an updated process, or a tool upgrade, we handle it.",
+      body: "Think of it like outsourcing your bookkeeping or IT. Except instead of accounting or helpdesk, we handle the operational busywork that's quietly eating 15 to 20 percent of your margins: onboarding, burn reports, invoicing, task routing, and dozens more. We monitor everything. When something changes, we handle it.",
     },
   ],
 };
@@ -46,12 +46,12 @@ export const threeThings = {
 export const wioHowItWorks = {
   headline: "Three Steps. Then It Just Runs.",
   intro:
-    "Every Meticulosity.io engagement follows the same proven path. We've done this across 60+ agency clients. The process is fast, non-disruptive, and designed to deliver measurable results within weeks, not months.",
+    "Every engagement follows the same proven path, refined across 60+ agency clients. The process is fast, non-disruptive, and designed to deliver measurable results within weeks, not months.",
   steps: [
     {
       number: "01",
       title: "We Connect Your Data",
-      body: "Before a single automation runs, we build what we call a unified data layer. This is a structured model that syncs your project management tool, accounting system, CRM, and communications into one connected view of your operations.",
+      body: "Before a single automation runs, we connect your project management tool, accounting system, CRM, and communications into one shared data layer: a single connected view of your operations.",
       details:
         "Think of it as a master roster that always knows which clients are active and what they purchased, who's working on what and how many hours they've logged, which tasks trace back to which clients and budgets, and what's been invoiced versus what hasn't.",
       extra:
@@ -62,9 +62,9 @@ export const wioHowItWorks = {
     {
       number: "02",
       title: "We Deploy Automations",
-      body: "From our library of 50+ workflows running in production across multiple agencies, we activate the ones that match your operations. Burn reports. Client onboarding. Time tracking sync. Budget enforcement. AI-powered task triage. SOP violation alerts. And more.",
+      body: "From our library of 50+ automations running live across multiple agencies, we activate the ones that match your operations. Burn reports. Client onboarding. Time tracking sync. Budget alerts. AI-powered task triage. And more.",
       details:
-        "Every automation has a pre-measured \"hours saved\" value based on how long that work takes a person to do manually. Not estimates. Not projections. Actual timed manual work that the automation replaces.",
+        "Every automation has a pre-measured \"hours saved\" value based on how long that work takes a person to do manually. Your monthly investment is based on the total hours saved, not guesswork.",
       extra:
         "We don't deploy everything at once. We start with the highest-impact automations, prove they work, and expand from there.",
     },
@@ -77,7 +77,7 @@ export const wioHowItWorks = {
     },
   ],
   bottomCallout:
-    "At Meticulosity, we run this exact system across 60+ concurrent agency clients. It saves over 230 hours of manual work every month, the equivalent of 1.5 full-time ops employees, operating with perfect consistency, around the clock.",
+    "At Meticulosity, we run this exact system across 60+ agency clients. It saves over 230 hours of manual work every month: the equivalent of 1.5 full-time hires, running around the clock.",
 };
 
 /* ─── Data Layer Deep Dive ─── */
@@ -94,7 +94,7 @@ export const dataLayerDeep = {
     "We learned this the hard way. An export bug in our project management tool left over 100 hours of legitimate billable work unreported, costing nearly $20,000 in unrecoverable revenue. Every agency knows the unwritten rule: you can't go back to a client weeks later and ask them to pay for time you forgot to invoice. That money was gone.",
   crisisConclusion: "That crisis is why the data layer exists.",
   whatItDoes:
-    "The data layer connects your tools into one unified view of your operations. Every time entry traces back to a task, which traces to a client, which traces to purchased hours. That chain is what makes burn reports, budget alerts, utilization tracking, and every other automation possible.",
+    "The data layer connects your tools into one shared view of your operations. Every time entry traces back to a task, which traces to a client, which traces to purchased hours. That chain is what makes burn reports, budget alerts, and every other automation possible.",
   features: [
     {
       title: "Client and Revenue Data",
@@ -114,7 +114,7 @@ export const dataLayerDeep = {
     {
       title: "Service Catalog",
       description:
-        "A standardized map of everything your agency delivers. Each service has a time estimate and links to your SOPs. When a task is created, it maps to your catalog, so the system knows what type of work it is and how to categorize it.",
+        "A standardized map of everything your agency delivers. Each service has a time estimate and links to your processes. When a task is created, it maps to your catalog, so the system knows what type of work it is and how to categorize it.",
     },
   ],
   howItConnects:
@@ -124,14 +124,14 @@ export const dataLayerDeep = {
   builtForAi:
     "AI is only as reliable as the data it draws from. Our AI-powered automations don't guess. They draw from clean, connected, structured data that we build and maintain. That's why they work reliably at scale, and that's why \"just plug in ChatGPT\" doesn't produce the same results.",
   atScale:
-    "At Meticulosity, our data layer tracks 8,500+ tasks and 12,500+ time entries across 60+ concurrent clients. It's the reason we can run so many automations reliably without human oversight. Without it, each automation would need its own fragile way of looking things up. With it, every automation draws from the same single source of truth.",
+    "At Meticulosity, our data layer connects 60+ clients across every tool in their stack. It's the reason we can run so many automations reliably. Without it, each automation would need its own fragile way of looking things up. With it, every automation draws from the same single source of truth.",
   callout:
     "You don't build it. You don't maintain it. You don't even log into it. We handle all of that as part of the service.",
 };
 
 /* ─── Featured Automations ─── */
 export const featuredAutomations = {
-  headline: "50+ Production Automations. Here's What They Replace.",
+  headline: "50+ Live Automations. Here's What They Replace.",
   intro:
     "Every automation in our library was built because something broke, was forgotten, took too long, or cost too much when done manually. They run in production across multiple agencies today. Here are the ones that make the biggest immediate difference.",
   automations: [
@@ -139,17 +139,17 @@ export const featuredAutomations = {
       name: "Client Time Tracking Burn Reports",
       tags: ["RevOps", "Agentic"],
       stat: "6 to 12+ hours saved per week",
-      body: "An agentic two-cadence reporting system that automatically generates personalized burn reports for every active client, archives them in Google Drive, and delivers them by email. Weekly summaries every Friday. Comprehensive monthly reports at end-of-month. Nobody touches a spreadsheet.",
-      pain: "Delivering burn reports means someone on your team spends every Friday afternoon grinding through query, export, format, email, save, repeat. When that person is out sick or buried in work, the reports don't go out. Clients notice. First they stay silent, then they ask, then they wonder what else is being missed.",
+      body: "Automatically generates personalized burn reports for every active client, archives them in Google Drive, and delivers them by email. Weekly summaries every Friday. Monthly reports at end-of-month. Nobody touches a spreadsheet.",
+      pain: "Someone on your team spends every Friday afternoon grinding through query, export, format, email, repeat. When that person is out sick, the reports don't go out. Clients notice, and they start wondering what else is being missed.",
       scale:
         "At Meticulosity, we spent about 10 to 15 minutes per client per week preparing burn reports, then again at month-end. With 60 clients, we're saving about 50 hours per month automating the entire process.",
     },
     {
-      name: "Agentic AI Client Call Transcript Processor",
+      name: "AI Call Transcript Processor",
       tags: ["Client Ops", "PM Ops", "Agentic"],
       stat: "4 to 8+ hours saved per week",
-      body: "After every client call, the recording is transcribed and matched to the right client. The system pulls that client's full active task list, then hands the transcript and task list to AI, which identifies tasks discussed, extracts action items and deadlines, captures key decisions, and writes a concise summary. That summary posts to Slack for team review. Then the system takes action: every task discussed on the call gets a comment added automatically in your PM tool with the relevant context.",
-      pain: "After every client call, someone needs to write up notes, figure out which tasks were referenced, update the PM tool, and notify the right people. In practice, this almost never happens consistently. The account manager hangs up, gets pulled into another meeting, and by 5pm the details are fading. Action items slip through the cracks.",
+      body: "After every client call, the recording is transcribed and matched to the right client. AI cross-references the transcript against active tasks, extracts action items and deadlines, and writes a concise summary that posts to Slack. Every task discussed on the call gets a comment added automatically in your PM tool with the relevant context.",
+      pain: "After every client call, someone needs to write up notes, update the PM tool, and notify the right people. In practice, this rarely happens consistently. The account manager gets pulled into the next meeting, details fade, and action items slip through the cracks.",
       scale:
         "If each call takes 15 to 20 minutes to process manually and you average 3 calls per client per week, a 30-client agency burns 22+ hours per week on post-call administration. This automation runs those hours down to zero.",
     },
@@ -157,7 +157,7 @@ export const featuredAutomations = {
       name: "New Client Onboarding",
       tags: ["Client Lifecycle", "Agentic"],
       stat: "3.5 hours saved per client",
-      body: "Triggered when a proposal is signed. Automatically creates a PM workspace with your standard folder structure, a dedicated Slack channel, Google Drive folders, a QuickBooks customer record, and fires the onboarding email sequence. Zero-touch. Every new client gets the same consistent setup, every time, in minutes instead of hours.",
+      body: "Triggered when a proposal is signed. Automatically creates a PM workspace with your standard folder structure, a dedicated Slack channel, Google Drive folders, a QuickBooks customer record, and fires the onboarding email sequence. Every new client gets the same consistent setup, every time, in minutes instead of hours.",
       pain: "Onboarding is one of the first places agencies drop the ball at scale. When you're onboarding 4 to 6 clients per month, the manual setup work alone eats a full day. Miss a step and the project starts on the wrong foot.",
     },
     {
@@ -169,7 +169,7 @@ export const featuredAutomations = {
     },
   ],
   catalogCta: {
-    body: "These four are the automations that get the biggest reaction in discovery calls. But they represent a fraction of what's available. Our full library spans client lifecycle, project management, time and billing, team communication, AI-powered intelligence, data synchronization, and SOP standardization.",
+    body: "These four are the automations that get the biggest reaction in discovery calls, but they represent a fraction of what's available. Our full library spans client lifecycle, project management, time and billing, team communication, AI-powered intelligence, and data synchronization.",
     label: "View the Full Automation Catalog",
   },
 };
@@ -200,14 +200,9 @@ export const aiSection = {
       description:
         "AI reviews completed work across your team and generates plain-english summaries for client-facing reports.",
     },
-    {
-      title: "Project Plan Generation",
-      description:
-        "AI reads a signed statement of work and generates a structured project plan with tasks, milestones, and time estimates.",
-    },
   ],
   callout:
-    "AI is only as reliable as the data it draws from. Our AI-powered automations don't guess. They draw from clean, connected, structured data that we build and maintain through the unified data layer. That's why they work reliably at scale, and why plugging AI into disconnected tools produces unreliable results.",
+    "AI is only as reliable as the data it draws from. Our AI-powered automations don't guess. They draw from clean, connected data that we build and maintain. That's why they work reliably at scale, and why plugging AI into disconnected tools produces unreliable results.",
 };
 
 /* ─── The Numbers ─── */
@@ -215,7 +210,7 @@ export const numbers = {
   headline:
     "230+ Hours Saved Per Month at Meticulosity. What Could It Do for Yours?",
   intro:
-    "These aren't projections. These are production numbers from running Meticulosity.io internally across 60+ concurrent agency clients.",
+    "These aren't projections. These are real numbers from running Meticulosity.io internally across 60+ agency clients.",
   timeSavings: {
     headers: ["Category", "Hours Saved/Month", "Key Drivers"],
     rows: [
@@ -245,7 +240,7 @@ export const numbers = {
         drivers: "Task SOP enforcement, daily audits",
       },
     ],
-    total: { hours: "237", label: "Equivalent of ~1.5 FTEs" },
+    total: { hours: "237", label: "Equivalent of ~1.5 full-time hires" },
   },
   roi: {
     headers: ["", "Boutique Agency", "Mid-Size Agency", "Large Agency"],
@@ -282,7 +277,7 @@ export const numbers = {
     ],
   },
   scaleCallout:
-    "Meticulosity is a boutique firm. We serve 60+ concurrent clients with a lean team. If our automations save 230+ hours per month at this scale, the impact for a 30-person, 50-person, or 100-person agency would be at significant multiples higher. The automations scale linearly with your client count. Every new client you add increases the hours saved without increasing the work required from your team.",
+    "Meticulosity is a boutique firm serving 60+ clients with a lean team. If our automations save 230+ hours per month at this scale, the impact for a larger agency would be significantly higher. The automations scale with your client count: every new client increases the hours saved without increasing the work required from your team.",
 };
 
 /* ─── Tools Grid ─── */
@@ -378,9 +373,9 @@ export const wioOriginStory = {
   headline: "Built from Operational Necessity, Not Market Research",
   body: [
     "Meticulosity.io didn't start as a product idea. It started as a survival mechanism.",
-    "Meticulosity is a white-label HubSpot agency. We've been a HubSpot partner for over 11 years, currently hold Platinum status, and have completed over 5,800 projects. For the last two years, we've operated as \"The HubSpot Agency for Agencies,\" delivering white-label HubSpot services invisibly under partner agency brands.",
-    "Running 60+ concurrent agency clients across time zones, skill tiers, and billing models forced a choice: automate or break. We chose to automate.",
-    "Over the past decade, we built, tested, broke, rebuilt, and refined a library of 50+ production-grade automations. Many are AI-enhanced. Together they save over 230 hours of manual work every month. That's 1.5 full-time ops employees, operating with perfect consistency, around the clock, at a fraction of the cost.",
+    "Meticulosity is a white-label HubSpot agency. We've been a HubSpot partner for over 11 years, hold Platinum status, and have completed over 5,800 projects. We operate as \"The HubSpot Agency for Agencies,\" delivering services under partner agency brands.",
+    "Running 60+ agency clients across time zones and billing models forced a choice: automate or break. We chose to automate.",
+    "Over two years, we built and refined a library of 50+ automations, many AI-enhanced, that now save over 230 hours of manual work every month. That's the equivalent of 1.5 full-time hires, running around the clock at a fraction of the cost.",
     "Every automation exists because something broke, was forgotten, took too long, or cost too much when done manually. This product was forged in the daily grind of running a real agency with real clients, real deadlines, and real consequences for mistakes.",
     "Now we operate those same automations for you.",
   ],
@@ -407,7 +402,7 @@ export const faq = {
       id: "team-change",
       question: "Do we need to change how our team works?",
       answer:
-        "No. We plug into your existing tools and processes. Your team keeps working in the same PM tool, the same Slack channels, the same email. The automations run in the background. The only thing that changes is that repetitive ops work stops landing on someone's desk.",
+        "No. We plug into your existing tools and processes. Your team keeps working exactly where they work now. The only thing that changes is that repetitive ops work stops landing on someone's desk.",
     },
     {
       id: "tools",
@@ -443,7 +438,7 @@ export const faq = {
       id: "start-small",
       question: "Can we start small and expand?",
       answer:
-        "That's exactly how we recommend it. Start with the automations that address your biggest pain points. Prove the value. Then expand into more categories as you see results. Our pricing scales with hours saved, so you only pay for work that actually gets replaced.",
+        "That's exactly how we recommend it. Start with the automations that address your biggest pain points, prove the value, then expand as you see results. You only pay for hours saved, so pricing scales naturally.",
     },
   ],
 };
@@ -452,7 +447,7 @@ export const faq = {
 export const wioFinalCta = {
   headline: "See What 230+ Hours of Recovered Capacity Looks Like",
   subheadline:
-    "Book a discovery call and we'll walk through your tools, your pain points, and the specific automations that would make the biggest difference for your agency. No pitch deck. No generic demo. Just a conversation about your operations and what's possible.",
+    "Book a discovery call and we'll walk through your tools, your pain points, and the specific automations that would make the biggest difference for your agency. No pitch deck. Just a conversation about your operations.",
   cta: "Book a Discovery Call",
   finePrint: "Every automation described on this page runs in production today.",
 };
