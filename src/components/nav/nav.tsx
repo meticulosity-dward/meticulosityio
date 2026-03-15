@@ -52,7 +52,7 @@ export default function Nav() {
                 alt=""
                 className="h-8 w-auto"
               />
-              <span className="flex items-center gap-0">
+              <span className="flex items-center gap-0 -translate-y-[4px]">
                 <span className="font-heading text-2xl font-bold text-white">
                   meticulosity
                 </span>
