@@ -2,7 +2,7 @@
   "nav": {
     "links": [
       {
-        "label": "What is .io",
+        "label": "The Platform",
         "href": "/what-is-meticulosity-io"
       },
       {
@@ -552,7 +552,7 @@
         "title": "Product",
         "links": [
           {
-            "label": "What is .io",
+            "label": "The Platform",
             "href": "/what-is-meticulosity-io"
           },
           {
@@ -574,19 +574,11 @@
         "links": [
           {
             "label": "About Meticulosity",
-            "href": "#about"
+            "href": "https://www.meticulosity.com"
           },
           {
             "label": "Meticulosity Global",
-            "href": "#about"
-          },
-          {
-            "label": "HubSpot Partner",
-            "href": "#about"
-          },
-          {
-            "label": "Contact",
-            "href": "#contact"
+            "href": "https://www.meticulosity.ae"
           }
         ]
       }
