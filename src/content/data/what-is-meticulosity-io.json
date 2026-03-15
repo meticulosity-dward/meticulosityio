@@ -1,8 +1,8 @@
 {
   "wioHero": {
     "eyebrow": "Automation-as-a-Service Built for Agencies",
-    "headline": "We Automate Agency Operations So Your Team Doesn't Have To",
-    "subheadline": "Meticulosity.io is a managed automation service. We plug into the tools you already use, deploy automations that replace repetitive ops work, and run everything on an ongoing basis. Your team never builds or maintains a workflow. That's our job.",
+    "headline": "We Automate Agency Operations\nSo Your Team Doesn't Have To",
+    "subheadline": "Meticulosity.io is a managed agency operations automation service. We plug into the tools you already use, deploy workflow automations that replace repetitive ops work, and run everything on an ongoing basis. Your team never builds or maintains a workflow. That's our job.",
     "stats": [
       {
         "value": "50+",
@@ -224,7 +224,7 @@
     },
     "roi": {
       "headers": [
-        "",
+        null,
         "Boutique Agency",
         "Mid-Size Agency",
         "Large Agency"
@@ -236,7 +236,8 @@
             "$1,000,000",
             "$3,000,000",
             "$5,000,000"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": "Hours Saved/Month",
@@ -244,7 +245,8 @@
             "191",
             "487",
             "776"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": "Margin Impact",
@@ -252,7 +254,8 @@
             "+15pp",
             "+13pp",
             "+12pp"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": ".io Annual Investment",
@@ -260,7 +263,8 @@
             "~$18,300",
             "~$46,800",
             "~$74,500"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": "Cost if Done by Staff",
@@ -268,7 +272,8 @@
             "~$153,000/yr",
             "~$390,000/yr",
             "~$621,000/yr"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": "Net Annual Savings",
@@ -276,7 +281,8 @@
             "~$135,000",
             "~$344,000",
             "~$548,000"
-          ]
+          ],
+          "highlight": false
         },
         {
           "label": "ROI Multiple",

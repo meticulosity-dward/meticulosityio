@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { BreadcrumbSchema } from "@/components/shared/breadcrumb-schema";
 
 export const metadata: Metadata = {
   title:
-    "Automation Catalog | 24 Production Automations for Agencies | Meticulosity.io",
+    "Agency Automation Catalog | 24 Production Workflow Automations | Meticulosity.io",
   description:
-    "Browse 24 production automations running across agencies today: AI intelligence, time and billing, client lifecycle, and more.",
+    "Browse 24 agency workflow automations running in production today: AI-powered triage, time tracking, billing, client onboarding, and operations across ClickUp, HubSpot, and Slack.",
   openGraph: {
     title:
-      "Automation Catalog | 24 Production Automations for Agencies | Meticulosity.io",
+      "Agency Automation Catalog | 24 Production Workflow Automations | Meticulosity.io",
     description:
-      "Browse 24 production automations running across agencies today: AI intelligence, time and billing, client lifecycle, and more.",
+      "Browse 24 agency workflow automations running in production today: AI-powered triage, time tracking, billing, client onboarding, and operations across ClickUp, HubSpot, and Slack.",
     type: "website",
     locale: "en_US",
     siteName: "Meticulosity.io",
@@ -24,5 +25,10 @@ export default function AutomationCatalogLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <>
+      <BreadcrumbSchema items={[{ name: "Home", href: "/" }, { name: "Automation Catalog", href: "/automation-catalog" }]} />
+      {children}
+    </>
+  );
 }

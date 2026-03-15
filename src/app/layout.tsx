@@ -22,13 +22,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.meticulosity.io"),
-  title: "Meticulosity.io | Automation-as-a-Service Built for Agencies",
+  title: "Meticulosity.io | Managed Agency Automation Service",
   description:
-    "We automate agency operations so your team doesn't have to. 50+ production-tested automations saving 230+ hours/month.",
+    "Agency workflow automation as a managed service. 50+ production-tested automations for time tracking, billing, onboarding, and operations across ClickUp, HubSpot, and your existing stack. Saving 230+ hours/month.",
   openGraph: {
-    title: "Meticulosity.io | Automation-as-a-Service Built for Agencies",
+    title: "Meticulosity.io | Managed Agency Automation Service",
     description:
-      "We automate agency operations so your team doesn't have to. 50+ production-tested automations saving 230+ hours/month.",
+      "Agency workflow automation as a managed service. 50+ production-tested automations for time tracking, billing, onboarding, and operations across ClickUp, HubSpot, and your existing stack. Saving 230+ hours/month.",
     type: "website",
     locale: "en_US",
     siteName: "Meticulosity.io",
@@ -44,7 +44,7 @@ const organizationJsonLd = {
   name: "Meticulosity.io",
   url: "https://www.meticulosity.io",
   description:
-    "Managed automation service for agencies. 50+ production-tested automations deployed across your existing stack.",
+    "Managed agency workflow automation service. 50+ production-tested automations for time tracking, billing, onboarding, and operations deployed across ClickUp, HubSpot, Slack, and your existing stack.",
   foundingDate: "2009",
   founder: {
     "@type": "Person",
@@ -63,7 +63,27 @@ const websiteJsonLd = {
   name: "Meticulosity.io",
   url: "https://www.meticulosity.io",
   description:
-    "Automation-as-a-Service built for agencies. We plug into your existing tools and deploy production-tested automations.",
+    "Agency workflow automation as a managed service. We plug into your existing tools and deploy production-tested automations for time tracking, billing, onboarding, and operations.",
+};
+
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Meticulosity.io Managed Automation Service",
+  serviceType: "Agency Workflow Automation",
+  description:
+    "Managed agency operations automation service with 50+ production-tested workflow automations for time tracking, billing, client onboarding, AI-powered triage, and project management across ClickUp, HubSpot, Slack, and QuickBooks.",
+  provider: {
+    "@type": "Organization",
+    name: "Meticulosity Enterprises Inc.",
+    url: "https://meticulosity.com",
+  },
+  areaServed: "Worldwide",
+  offers: {
+    "@type": "Offer",
+    description: "Pay-as-you-go hourly pricing starting at $8/hr",
+    priceCurrency: "USD",
+  },
 };
 
 export default function RootLayout({
@@ -93,6 +113,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(serviceJsonLd),
           }}
         />
       </head>
