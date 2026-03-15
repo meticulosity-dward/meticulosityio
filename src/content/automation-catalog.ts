@@ -39,11 +39,11 @@ export type Category = {
 /* ─── Hero ─── */
 export const catalogHero = {
   eyebrow: "The Full Automation Library",
-  headline: "24 Production Automations. Every One Running Today.",
+  headline: "24 Live Automations. Every One Running Today.",
   subheadline:
-    "This is the complete catalog of automations available through Meticulosity.io. Every workflow listed here runs in production across multiple agencies right now. Each one was built because something broke, was forgotten, took too long, or cost too much when done manually. Browse by category, read the workflow breakdowns, and see exactly what gets automated when you come on board.",
+    "This is the complete catalog of automations available through Meticulosity.io. Every workflow listed here runs live across multiple agencies right now. Each one was built because something broke, was forgotten, took too long, or cost too much when done manually.",
   stats: [
-    { value: "24", label: "Production Automations" },
+    { value: "24", label: "Live Automations" },
     { value: "6", label: "Categories" },
     { value: "230+", label: "Hours Saved Per Month" },
     { value: "13", label: "Agentic Workflows" },
@@ -54,7 +54,7 @@ export const catalogHero = {
 
 /* ─── Orientation ─── */
 export const catalogOrientation =
-  "Each automation includes a plain-english description, a workflow diagram showing exactly what happens, and the category and systems involved. Automations tagged \"Agentic\" go beyond notifications. They take real action in your systems: creating records, updating tasks, sending emails, and blocking work. Automations without the Agentic tag still run automatically, but their output is informational or internal.";
+  "Each automation includes a plain-english description, a workflow diagram showing exactly what happens, and the systems involved. Automations tagged \"Agentic\" go beyond notifications: they take real action in your systems, creating records, updating tasks, sending emails, and blocking work. Non-agentic automations still run automatically, but their output is informational.";
 
 /* ─── Categories ─── */
 export const categories: Category[] = [
@@ -65,7 +65,7 @@ export const categories: Category[] = [
     id: "ai-powered-intelligence",
     name: "AI-Powered Intelligence",
     intro:
-      "Nine automations that embed AI directly into operational workflows. No manual prompting. No copy-paste. No variance between team members. The AI runs inside the automation, using standardized prompts against clean data, producing consistent outcomes every time.",
+      "Nine automations that embed AI directly into your workflows. No manual prompting. No copy-paste. No variance between team members. The AI runs inside the automation, producing consistent outcomes every time.",
     automations: [
       {
         id: "ai-call-transcript-processor",
@@ -74,10 +74,10 @@ export const categories: Category[] = [
         tags: ["AI-Powered Intelligence", "Agentic"],
         featured: true,
         stat: "10 to 30+ hours saved per month",
-        body: "An agentic AI workflow that listens to every client call, understands what was discussed, and automatically updates your project tasks with call context, with human oversight built in before any action is taken. After a call ends, the recording is transcribed and matched to the right client. The system pulls that client's active task list, then hands the transcript and task list to AI. The AI identifies which tasks were discussed, extracts action items and deadlines, captures key decisions, and writes a concise summary. That summary posts to Slack for team review. Then the system takes action: every task discussed on the call gets a comment added automatically in your PM tool.",
+        body: "After every client call, the recording is transcribed and matched to the right client. AI cross-references the transcript against active tasks, identifies which tasks were discussed, extracts action items and deadlines, and writes a concise summary. That summary posts to Slack for team review. Once approved, every task discussed on the call gets a comment added automatically in your PM tool. Human oversight is built in before any action is taken.",
         pain: "After every client call, someone needs to write up notes, figure out which tasks were referenced, update the PM tool, and notify the right people. In practice, this almost never happens consistently. Action items slip through the cracks. At 20 clients averaging 2-3 calls per week, that's 40-60 calls per month with 15-30 minutes of manual follow-up each.",
         scale:
-          "At 20 active clients, this replaces 10-30 hours per month of post-call administration. At 50 clients, it's 50-75 hours per month: nearly half an FTE dedicated to nothing but call recaps and task updates. This automation handles all of it within minutes of every call ending.",
+          "At 20 active clients, this replaces 10-30 hours per month of post-call administration. At 50 clients, it's 50-75 hours per month: nearly half a full-time hire dedicated to call recaps and task updates. This automation handles all of it within minutes of every call ending.",
         workflow: [
           { label: "Client Call Ends", type: "trigger" },
           { label: "Recording is Transcribed", type: "data" },
@@ -247,8 +247,8 @@ export const categories: Category[] = [
         tags: ["Time and Billing", "Agentic"],
         featured: true,
         stat: "6 to 12+ hours saved per week",
-        body: "An agentic two-cadence reporting system that automatically generates personalized burn reports for every active client. Weekly summaries go out every Friday. Comprehensive monthly reports go out at end-of-month. Each report is generated from the data layer, formatted into a clean spreadsheet, archived in Google Drive with standardized naming, and delivered directly to the client by email. Nobody touches a spreadsheet. Nobody composes an email. Nobody remembers to attach the file. The system handles the full delivery, from data to inbox, for every client, on the same schedule, every cycle.",
-        pain: "Delivering burn reports means someone on your team spends every Friday afternoon grinding through query, export, format, email, save, repeat. When that person is out sick or buried in work, the reports don't go out. Clients notice. First they stay silent, then they ask, then they start wondering what else is being missed.",
+        body: "Automatically generates personalized burn reports for every active client on two schedules. Weekly summaries go out every Friday. Monthly reports go out at end-of-month. Each report is generated from the data layer, formatted into a clean spreadsheet, archived in Google Drive with standardized naming, and delivered directly to the client by email. Nobody touches a spreadsheet. Nobody composes an email. The system handles full delivery, from data to inbox, for every client, every cycle.",
+        pain: "Someone on your team spends every Friday afternoon grinding through query, export, format, email, repeat. When that person is out sick, the reports don't go out. Clients notice, and they start wondering what else is being missed.",
         scale:
           "At 15 clients, manual burn reporting takes roughly 4-5 hours every Friday plus a full day at month-end. At 30 clients, it's 8-10 hours per week. At Meticulosity's scale (60+ clients), this automation saves over 15 hours per week. That's 60+ hours per month returned to your team.",
         workflow: [
@@ -280,11 +280,11 @@ export const categories: Category[] = [
       },
       {
         id: "three-tier-time-sync",
-        name: "Three-Tier Time Tracking Sync",
+        name: "Time Tracking Sync",
         category: "Time and Billing",
         tags: ["Time and Billing"],
         featured: false,
-        body: "A three-layer automated sync system that keeps your billing database perfectly aligned with your time tracking. Daily syncs catch new entries from the last 2-3 days. Weekly reconciliation sweeps the last 30 days to catch edits. A monthly full sweep covers the last 90 days to guarantee nothing was missed. For every entry, the system checks whether it already exists in the billing database: existing entries are updated, new entries are created. Your time data is always accurate, complete, and ready for reporting.",
+        body: "An automated sync that keeps your billing database perfectly aligned with your time tracking. Daily syncs catch new entries. Weekly sweeps catch edits from the last 30 days. A monthly sweep covers the last 90 days to guarantee nothing was missed. For every entry, the system checks whether it already exists: existing entries are updated, new entries are created. Your time data is always accurate, complete, and ready for reporting.",
         workflow: [
           { label: "Daily Sync: Pulls Last 2-3 Days", type: "trigger" },
           { label: "Weekly Reconciliation: Pulls Last 30 Days", type: "trigger" },
@@ -329,7 +329,7 @@ export const categories: Category[] = [
         tags: ["Client Lifecycle", "Agentic"],
         featured: true,
         stat: "3.5 hours saved per client",
-        body: "The most agentic automation in the catalog. Fires the instant a client signs a proposal, setting up their entire operational footprint across nine systems in under a minute. CRM records are updated with closed-won status and renewal reminders. Google Drive gets a 12-folder structure with the signed proposal and onboarding decks copied in. Your PM tool gets a project folder, task lists, and starter tasks generated from templates. A dedicated Slack channel is created. QuickBooks gets a customer record with billing details. The capacity planning database is updated. Calendar events are scheduled for experience check-ins and the one-year anniversary. The setup is routed by client type: agency clients and end-clients each get a tailored configuration. 23 setup steps across 9 systems. Nothing is missed. Nothing is late. Nothing depends on memory.",
+        body: "Fires the instant a client signs a proposal, setting up their entire operational footprint across nine systems in under a minute. CRM records are updated with closed-won status and renewal reminders. Google Drive gets a 12-folder structure with the signed proposal and onboarding decks copied in. Your PM tool gets a project folder, task lists, and starter tasks generated from templates. A dedicated Slack channel is created. QuickBooks gets a customer record with billing details. The capacity planning database is updated. Calendar events are scheduled for experience check-ins and the one-year anniversary. The setup is routed by client type: agency clients and end-clients each get a tailored configuration. 23 setup steps across 9 systems. Nothing is missed. Nothing is late. Nothing depends on memory.",
         pain: "Client onboarding is one of the first places agencies drop the ball at scale. The PM creates the folder but forgets the billing record. Finance sets up QuickBooks but nobody told them the start date. The Slack channel gets created two weeks late. When you're onboarding 4-6 clients per month, the manual setup work alone eats a full day, and missed steps mean the project starts on the wrong foot.",
         scale:
           "At 2 new clients per month, this saves 4-8 hours and eliminates missed steps. At 5 clients per month, it saves 10-20 hours and replaces what would require a dedicated onboarding coordinator. At 10 or more per month, it's the only way to maintain quality without adding headcount.",
@@ -442,7 +442,7 @@ export const categories: Category[] = [
         category: "Project Management",
         tags: ["Project Management", "Agentic"],
         featured: false,
-        body: "The instant a work deliverable is selected on a task, this automation looks it up in a master service catalog and writes the matching configuration directly to the task: time estimate, department assignment, skill tier, SOP documentation link, and a step-by-step checklist. Every assignment arrives fully configured without anyone copying and pasting from a reference sheet. If the deliverable isn't found in the catalog, the team gets an alert so the gap can be addressed.",
+        body: "The instant a work deliverable is selected on a task, this automation looks it up in a master service catalog and writes the matching configuration directly to the task: time estimate, department assignment, skill tier, process documentation link, and a step-by-step checklist. Every assignment arrives fully configured without anyone copying and pasting from a reference sheet. If the deliverable isn't found in the catalog, the team gets an alert so the gap can be addressed.",
         workflow: [
           { label: "Deliverable Selected on Task", type: "trigger" },
           { label: "Look Up in Master Catalog", type: "data" },
@@ -476,7 +476,7 @@ export const categories: Category[] = [
     id: "data-synchronization",
     name: "Data Synchronization",
     intro:
-      "Two automations that keep your systems aligned and your data clean. These are the infrastructure workflows that other automations depend on. Without reliable sync, burn reports show stale numbers, budget enforcement misses entries, and your reporting database drifts out of truth. These workflows make sure that never happens.",
+      "Two automations that keep your systems aligned and your data clean. These are the foundation workflows that other automations depend on. Without reliable sync, burn reports show stale numbers and budget enforcement misses entries. These workflows make sure that never happens.",
     automations: [
       {
         id: "clickup-airtable-sync",
@@ -484,7 +484,7 @@ export const categories: Category[] = [
         category: "Data Synchronization",
         tags: ["Data Synchronization"],
         featured: false,
-        body: "A two-tier automated sync that mirrors every task from your PM tool into your reporting database. A daily sync catches new and updated tasks from the last 2 days, extracting the full context: assignees, custom fields, dates, and project hierarchy. An end-of-month sweep covers the last 30 days to guarantee nothing was missed. For each task, the system checks whether it already exists: existing records are updated, new records are created. Your project data is always queryable, reportable, and trustworthy.",
+        body: "An automated sync that mirrors every task from your PM tool into your reporting database. A daily sync catches new and updated tasks from the last 2 days, extracting the full context: assignees, custom fields, dates, and project hierarchy. An end-of-month sweep covers the last 30 days to guarantee nothing was missed. For each task, the system checks whether it already exists: existing records are updated, new records are created. Your project data is always queryable, reportable, and trustworthy.",
         workflow: [
           { label: "Daily Sync Runs Every Day", type: "trigger" },
           { label: "End-of-Month Sweep Runs on Last Day", type: "trigger" },
@@ -578,7 +578,7 @@ export const catalogSummary = {
       category: "Client Lifecycle",
       count: 4,
       capabilities:
-        "Zero-touch onboarding, quote-to-invoice, quote tracking, visitor outreach",
+        "Automated onboarding, quote-to-invoice, quote tracking, visitor outreach",
     },
     {
       category: "Project Management",
@@ -602,7 +602,7 @@ export const catalogSummary = {
     label: "230+ hours saved per month at Meticulosity",
   },
   benchmark:
-    "At Meticulosity, we run this exact system across 60+ concurrent agency clients. It saves over 230 hours of manual work every month. That's the equivalent of 1.5 full-time ops employees, operating with perfect consistency, around the clock. And Meticulosity is a boutique firm. If these results are possible at our scale, the impact for a 30-person, 50-person, or 100-person agency would be at significant multiples higher.",
+    "At Meticulosity, we run this exact system across 60+ agency clients. It saves over 230 hours of manual work every month: the equivalent of 1.5 full-time hires, running around the clock. We're a boutique firm. If these results are possible at our scale, the impact for a larger agency would be significantly higher.",
 };
 
 /* ─── CTA ─── */
@@ -612,7 +612,7 @@ export const catalogCta = {
   primaryCta: "Book a Discovery Call",
   secondaryCta: "Take the Free Assessment",
   finePrint:
-    "Every automation in this catalog runs in production today across multiple agencies.",
+    "Every automation in this catalog runs live today across multiple agencies.",
 };
 
 /* ─── Related Pages ─── */
