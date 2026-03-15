@@ -16,7 +16,7 @@ export default function Footer() {
                 alt=""
                 className="h-[26px] w-auto"
               />
-              <span className="flex items-center gap-0 -translate-y-[2px]">
+              <span className="flex items-center gap-0">
                 <span className="font-heading text-xl font-bold text-white">
                   meticulosity
                 </span>
