@@ -25,7 +25,7 @@ export default function Footer() {
                 </span>
               </span>
             </div>
-            <p className="text-sm text-white/40">{footer.tagline}</p>
+            {footer.tagline && <p className="text-sm text-white/40">{footer.tagline}</p>}
             <p className="text-sm text-white/30 mt-1">{footer.location}</p>
           </div>
 
